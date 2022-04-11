@@ -43,9 +43,10 @@ header ul li a{
     flex-direction: row;
 }
 
-aside{
-    width: 25%;
+img{
+    width: 15%;
     padding-top: 7%;
+    margin: 3%;
 }
 
 .objetivo{
