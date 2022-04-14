@@ -4,12 +4,17 @@
 }
 
 body{
+    width: 100%;
+    margin-top: 8%;
+}
+
+body{
     background: #004643;
     color: #abd1c6;
 }
 
 body h2{
-    padding-top: 5%;
+    padding-top: 8.5%;
     border-bottom: 0.1rem solid #00ffff;
     color: #fffffe;
 }
@@ -20,22 +25,29 @@ body h2{
 
 header ul{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 0.1rem solid black;
-    padding: 1.5rem 0rem 1.5rem 0.5rem;
+    flex-direction: column;  
     position: fixed;
     top: 0;
-    width: 99%;
+    left: 0;
+    width: 100%;
+    border: 0.1rem solid black;
     background-color: #fffffe;
-    line-height: 50%;
+    height: 15%;
+    justify-content: space-evenly;
+}
+
+header ul div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 4%;
 }
 
 header ul li a{
     /* background-color: #f9bc60 */
-    padding: 0.4rem 0.2rem 0.9rem 0rem;
     text-decoration: none;
     color: #004643;
+    
 }
 
 .aside-img{
@@ -43,18 +55,16 @@ header ul li a{
     flex-direction: row;
 }
 
-img{
-    width: 15%;
-    padding-top: 7%;
-    margin: 3%;
-}
+.icone{
+    margin-left: 60%;
+    width: 10%;
+    height: 10%;
+    background-color: #fffffe;
 
-.objetivo{
-    width: 75%;
 }
 
 #objetivo{
-    padding-top: 8%;
+    padding-top: 12%;
 }
 
 .espacoNoEndereco{
@@ -64,4 +74,16 @@ img{
 
 .marginDoEndereco{
     margin-left: 3%;
+}
+
+.aside-img img{
+    width: 3%;
+    height: 3%;
+    margin-left: 1.5%;
+}
+
+.cachoeira{
+    background-image: url("img/Tulips.jpg");
+    padding-top: 7%;
+    border: 0.1rem solid white;
 }
