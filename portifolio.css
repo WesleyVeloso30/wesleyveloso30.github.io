@@ -4,8 +4,8 @@
 }
 
 body{
-    width: 100%;
-    margin-top: 8%;
+    max-width: 100%;
+    margin-top: 120px;
 }
 
 body{
@@ -13,8 +13,14 @@ body{
     color: #abd1c6;
 }
 
+main{
+    min-width: 360px;
+    max-width: 1300px;
+    margin:auto;
+}
+
 body h2{
-    padding-top: 8.5%;
+    margin-top: 8%;
     border-bottom: 0.1rem solid #00ffff;
     color: #fffffe;
 }
@@ -26,28 +32,31 @@ body h2{
 header ul{
     display: flex;
     flex-direction: column;  
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     border: 0.1rem solid black;
     background-color: #fffffe;
-    height: 15%;
+   
+
     justify-content: space-evenly;
 }
 
-header ul div{
+header ul nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 4%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 header ul li a{
     /* background-color: #f9bc60 */
     text-decoration: none;
     color: #004643;
-    
+   
 }
 
 .aside-img{
@@ -56,15 +65,16 @@ header ul li a{
 }
 
 .icone{
-    margin-left: 60%;
-    width: 10%;
-    height: 10%;
+    width: 150px;
+    height: 150px;
     background-color: #fffffe;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #objetivo{
-    padding-top: 12%;
+    margin-top: 8%;
 }
 
 .espacoNoEndereco{
@@ -77,8 +87,8 @@ header ul li a{
 }
 
 .aside-img img{
-    width: 3%;
-    height: 3%;
+    width: 34px;
+    height: 34px;
     margin-left: 1.5%;
 }
 
@@ -86,4 +96,5 @@ header ul li a{
     background-image: url("img/Tulips.jpg");
     padding-top: 7%;
     border: 0.1rem solid white;
+    max-height: 300px;
 }
