@@ -38,7 +38,7 @@ header ul{
     width: 100%;
     border: 0.1rem solid black;
     background-color: #fffffe;
-   
+    border-radius: 10%;
 
     justify-content: space-evenly;
 }
@@ -97,4 +97,16 @@ header ul li a{
     padding-top: 7%;
     border: 0.1rem solid white;
     max-height: 300px;
+    border-radius: 10%;
+}
+
+footer{
+    background-color: #e0689a;
+    color: #004643;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+    border-radius: 10%;
 }
