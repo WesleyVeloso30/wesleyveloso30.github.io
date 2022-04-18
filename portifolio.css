@@ -31,7 +31,7 @@ body h2{
 
 header ul{
     display: flex;
-    flex-direction: column;  
+    flex-direction: row;  
     position: absolute;
     top: 0;
     left: 0;
@@ -39,20 +39,22 @@ header ul{
     border: 0.1rem solid black;
     background-color: #fffffe;
     border-radius: 10%;
-
     justify-content: space-evenly;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
 }
 
-header ul nav{
+/* header ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     padding-right: 4%;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+} */
 
-header ul li a{
+header nav ul li a{
     /* background-color: #f9bc60 */
     text-decoration: none;
     color: #004643;
@@ -75,15 +77,6 @@ header ul li a{
 
 #objetivo{
     margin-top: 8%;
-}
-
-.espacoNoEndereco{
-    display: flex;
-    flex-direction: row;
-}
-
-.marginDoEndereco{
-    margin-left: 3%;
 }
 
 .aside-img img{
