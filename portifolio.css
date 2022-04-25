@@ -5,12 +5,9 @@
 }
 
 body{
-    max-width: 100%;
-}
-
-body{
     background: #004643;
     color: #abd1c6;
+    margin-top: 13vh;
 }
 
 main{
@@ -20,7 +17,7 @@ main{
 }
 
 body h2{
-    margin-top: 8%;
+    padding-top: 13vh;
     border-bottom: 0.1rem solid #00ffff;
     color: #fffffe;
 }
@@ -32,27 +29,38 @@ body h2{
 header{
     background-color: #fffffe;
     border-radius: 10%;
-    height: 30%;
-    border: 0.1rem solid black;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 98vw;
+    
 }
 
 header ul{
     display: flex;
     flex-direction: row;  
     top: 0;
-    left: 0;
-    width: 100%;
-    justify-content: space-evenly;
-    justify-content: space-between;
-   
+    justify-content: space-around;
     align-items: center;
 }
 
 
 header nav ul li a{
     text-decoration: none;
-    color: #004643;
+    color: black;
    
+}
+
+.mobileMenu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobileMenu div{
+width: 32px;
+height: 2px;
+background: black;
+margin: 8px;
 }
 
 .aside-img{
@@ -61,19 +69,13 @@ header nav ul li a{
 }
 
 .icone{
-    max-width: 150px;
-    min-width: 100px;
-    max-height: 150px;
-    min-height: 100px;
+    width: 190px;
+    height: 150px;
     background-color: #fffffe;
     display: block;
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
-}
-
-#objetivo{
-    margin-top: 8%;
 }
 
 .aside-img img{
@@ -86,8 +88,7 @@ header nav ul li a{
 .cachoeira{
     background-image: url("img/Tulips.jpg");
     border: 0.1rem solid white;
-    padding-top: 7%;
-    height: 10%;
+    height: 25vh;
     border-radius: 10%;
 }
 
@@ -96,8 +97,12 @@ footer{
     color: #004643;
     padding-top: 5%;
     padding-bottom: 5%;
-    width: 100%;
+    width: 100vw;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 8vh;
     border-radius: 10%;
+}
+
+@media (max-width: 999px){
+    
 }
