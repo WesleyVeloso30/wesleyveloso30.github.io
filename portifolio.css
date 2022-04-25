@@ -1,11 +1,11 @@
 *{
     scroll-behavior: smooth;
     box-sizing: border-box;
+   
 }
 
 body{
     max-width: 100%;
-    margin-top: 120px;
 }
 
 body{
@@ -14,7 +14,7 @@ body{
 }
 
 main{
-    min-width: 360px;
+    min-width: 350px;
     max-width: 1300px;
     margin:auto;
 }
@@ -26,36 +26,30 @@ body h2{
 }
 
 .utilizarEspaço{
-    margin-top: 2%;
+    margin-top: 3rem;
+}
+
+header{
+    background-color: #fffffe;
+    border-radius: 10%;
+    height: 30%;
+    border: 0.1rem solid black;
 }
 
 header ul{
     display: flex;
     flex-direction: row;  
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    border: 0.1rem solid black;
-    background-color: #fffffe;
-    border-radius: 10%;
     justify-content: space-evenly;
     justify-content: space-between;
-    height: 10%;
+   
     align-items: center;
 }
 
-/* header ul{
-    display: flex;
-    flex-direction: row;
-    
-    padding-right: 4%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-} */
 
 header nav ul li a{
-    /* background-color: #f9bc60 */
     text-decoration: none;
     color: #004643;
    
@@ -67,12 +61,15 @@ header nav ul li a{
 }
 
 .icone{
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    min-width: 100px;
+    max-height: 150px;
+    min-height: 100px;
     background-color: #fffffe;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    bottom: 0;
 }
 
 #objetivo{
@@ -80,16 +77,17 @@ header nav ul li a{
 }
 
 .aside-img img{
-    width: 34px;
-    height: 34px;
+    max-width: 3%;
+    max-height: 5%;
+    min-height: 3%;
     margin-left: 1.5%;
 }
 
 .cachoeira{
     background-image: url("img/Tulips.jpg");
-    padding-top: 7%;
     border: 0.1rem solid white;
-    max-height: 300px;
+    padding-top: 7%;
+    height: 10%;
     border-radius: 10%;
 }
 
