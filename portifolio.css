@@ -1,136 +1,146 @@
-*{
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-   
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-body{
-    background: #004643;
-    color: #abd1c6;
-    margin-top: 13vh;
+body {
+  background: #004643;
+  color: #abd1c6;
+  margin-top: 13vh;
 }
 
-main{
-    min-width: 350px;
-    max-width: 1300px;
-    margin:auto;
+main {
+  min-width: 350px;
+  max-width: 1300px;
+  margin: auto;
 }
 
-body h2{
-    padding-top: 13vh;
-    border-bottom: 0.1rem solid #00ffff;
-    color: #fffffe;
+body h2 {
+  padding-top: 13vh;
+  border-bottom: 0.1rem solid #00ffff;
+  color: #fffffe;
 }
 
-.utilizarEspaço{
-    margin-top: 3rem;
+.utilizarEspaço {
+  margin-top: 3rem;
 }
 
-header{
-    background-color: #fffffe;
-    border-radius: 10%;
-    height: 10vh;
-    position: fixed;
-    top: 0;
-    width: 98vw;
-    
+header {
+  background-color: #fffffe;
+  border-radius: 10%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 98vw;
 }
 
-header ul{
-    display: flex;
-    flex-direction: row;  
-    top: 0;
-    justify-content: space-around;
+header ul {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.mobileMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileMenu div {
+  width: 32px;
+  height: 2px;
+  background: black;
+  margin: 8px;
+}
+
+.aside-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.icone {
+  width: 190px;
+  height: 150px;
+  background-color: #fffffe;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+
+.aside-img img {
+  max-width: 3%;
+  max-height: 5%;
+  min-height: 3%;
+  margin-left: 1.5%;
+}
+
+.cachoeira {
+  background-image: url('img/Tulips.jpg');
+  border: 0.1rem solid white;
+  height: 25vh;
+  border-radius: 10%;
+}
+
+footer {
+  background-color: #e0689a;
+  color: #004643;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 98vw;
+  text-align: center;
+  margin-top: 8vh;
+  border-radius: 10%;
+  margin: auto;
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header nav ul {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 70vw;
+    height: 92vh;
+    flex-direction: column;
     align-items: center;
-}
+    background: #fffffe;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
 
+  header nav ul li {
+    margin-left: 0;
+  }
 
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-   
-}
-
-.mobileMenu{
-    display: none;
-    cursor: pointer;
-}
-
-.mobileMenu div{
-width: 32px;
-height: 2px;
-background: black;
-margin: 8px;
-}
-
-.aside-img{
-    display: flex;
-    flex-direction: row;
-}
-
-.icone{
-    width: 190px;
-    height: 150px;
-    background-color: #fffffe;
+  .mobileMenu {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 0;
+    right: 10vw;
+  }
+
+  header nav ul.active {
+    transform: translateX(0);
+  }
 }
 
-.aside-img img{
-    max-width: 3%;
-    max-height: 5%;
-    min-height: 3%;
-    margin-left: 1.5%;
-}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
 
-.cachoeira{
-    background-image: url("img/Tulips.jpg");
-    border: 0.1rem solid white;
-    height: 25vh;
-    border-radius: 10%;
-}
-
-footer{
-    background-color: #e0689a;
-    color: #004643;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 100vw;
-    text-align: center;
-    margin-top: 8vh;
-    border-radius: 10%;
-}
-
-@media (max-width: 999px){
-    body{
-        overflow-x: hidden;
-    }
-    
-    header nav ul{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        flex-direction: column;
-        align-items: center;
-        background: #abd1c6;
-        justify-content: space-around;
-        transform: translateX(100%);
-    }
-
-    header nav ul li{
-        margin-left: 0;
-        opacity: 0;
-    }
-
-    .mobileMenu{
-        display: block;
-    }
-
-    header nav ul.active{
-        transform: translateX(0);
-    }
+  top {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
